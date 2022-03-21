@@ -60,13 +60,13 @@ function BuildCharts(sampleId) {
                 },
             ];
             let layout = {
-                title: 'Top 10 OTU',
+                title: 'Top 10 Bacteria Cultures Found',
 
                 showlegend: false,
                 xaxis: {
                     tickangle: 0,
-                    zeroline: true,
-                    title: "Sample Value",
+                    zeroline: true
+                    
                 },
                 yaxis: {
                     zeroline: true,
@@ -102,7 +102,7 @@ function BuildCharts(sampleId) {
             let dataBubble = [trace1];
 
             var layout = {
-                title: 'Top 10 OTU',
+                title: 'Bacteria Cultures Per Sample',
                 showlegend: false,
                 height: 600,
                 width: 1145,
@@ -116,7 +116,7 @@ function BuildCharts(sampleId) {
                 yaxis: {
                     zeroline: false,
                     gridwidth: 1,
-                    title: "Sample Value",
+                   
                 },
                 paper_bgcolor: "lavender",
             };
@@ -130,6 +130,7 @@ function BuildCharts(sampleId) {
                     domain: { x: [0, 1], y: [0, 1] },
                     value: wfreq, //Washing frequency
                     title: { text: "Washing frequency" },
+                    subtitle:{text: "Scrubs Per Week"},
                     type: "indicator",
 
                     mode: "gauge+number+delta",
