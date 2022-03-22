@@ -94,7 +94,7 @@ function BuildCharts(sampleId) {
                 text: otu_labels.slice(0, 10).reverse(), // otu_labels
                 mode: 'markers',
                 marker: {
-                    // color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)', 'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+                    color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)', 'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
                     size: samples_values.slice(0, 10).reverse() //size = sample value
                 }
             };
